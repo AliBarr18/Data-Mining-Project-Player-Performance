@@ -66,3 +66,31 @@ A successful model can provide:
 
 ### 5. Notebook
 See deliverable2_eda.ipynb for full code and visualizations
+
+## Deliverable 3 — Modeling, Evaluation & Insights
+
+### Models Trained
+| Model | Accuracy | Precision | Recall | F1 | Kappa |
+|---|---|---|---|---|---|
+| Random Forest | 0.8998 | 0.7320 | 0.5576 | 0.6330 | 0.5762 |
+| Logistic Regression | 0.8820 | 0.7514 | 0.3560 | 0.4831 | 0.4259 |
+| Tuned Random Forest | 0.9015 | 0.7405 | 0.5602 | 0.6379 | 0.5821 |
+
+### Best Model
+Tuned Random Forest — highest accuracy (90.15%) and best overall balance of metrics
+
+### Top 5 Features
+1. PageValues (0.3859)
+2. ExitRates (0.0901)
+3. ProductRelated_Duration (0.0868)
+4. ProductRelated (0.0726)
+5. Administrative_Duration (0.0596)
+
+### Actionable Insights
+- PageValues is the strongest predictor of purchase intent
+- High exit rates signal low purchase intent — target these users with promotions
+- Shoppers who spend more time on product pages are more likely to convert
+- Dataset is imbalanced — future work could use SMOTE to improve recall
+
+### Notebook
+See deliverable2_eda.ipynb for full code, visualizations, and model results
